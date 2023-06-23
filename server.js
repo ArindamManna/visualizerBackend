@@ -28,7 +28,7 @@ const corsOptions = {
     },
     credentials: true,
 };
-app.use(cors());
+app.use(cors(corsOptions));
 
 //checks for data in the request and parses it for the request handler
 app.use(express.json())
