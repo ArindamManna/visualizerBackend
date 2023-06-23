@@ -17,7 +17,7 @@ const app = express()
 
 // cors
 const whitelist =
-    "http://localhost:3000,http://localhost:3001,https://visualizermanna.netlify.app";
+    "http://localhost:3000,http://localhost:3001,https://visualizermanna.netlify.app/";
 const corsOptions = {
     origin: function (origin, callback) {
         if (!origin || whitelist.indexOf(origin) !== -1) {
